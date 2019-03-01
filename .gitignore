@@ -1,4 +1,10 @@
+# Mac:
+*.DS_Store
+
+# Folders:
 _archives/
 _site
+
+# Other
 .sass-cache
 .jekyll-metadata
