@@ -2,7 +2,7 @@
 layout:       post
 category:     post
 theme:        "Politics"
-title:        "US Senate Polarization in 2017"
+title:        "Visualizing US Senate Polarization in 2017"
 subtitle:     "How party line voting has evolved"
 author:       "Nicolas Guetta Jeanrenaud"
 repo: 		    "https://github.com/nico-gj/2017_senate_polarization"
@@ -10,7 +10,7 @@ date:         2018-02-13 12:00:00
 header-img:   ""
 ---
 
-As Donald Trump's first year in office comes to a close, talk of political polarization in Washington has increased. A number of research has found record levels of partisanship in Congress this past year ([VoteView](https://voteview.com/) has tracked partisanship in Congress since 1992 using the DW-NOMINATE procedure and recently called the 114th Congress ["the most polarized [...] since the early 20th Century"](https://voteviewblog.com/2016/12/18/the-end-of-the-114th-congress/)).
+As Donald Trump's first year in office comes to a close, talk of political polarization in Washington has increased. A number of research has found record levels of partisanship in Congress this past year (<a href="https://voteview.com/" target="_blank">VoteView</a> has tracked partisanship in Congress since 1992 using the DW-NOMINATE procedure and recently called the 114th Congress <a href="https://voteviewblog.com/2016/12/18/the-end-of-the-114th-congress/" target="_blank">"the most polarized [...] since the early 20th Century"</a>).
 
 In this project, I take a look at voting in the US Senate over the past 30 years. By running a Principal Component Analysis on every senator's roll call votes, I create a voting profile and visualize ideological clusters and party polarization. While a number of factors influence a given Senate session's voting profile, overall trends seem to indicate that Senator's increasingly vote according to party lines.
 
@@ -22,7 +22,7 @@ In this project, I take a look at voting in the US Senate over the past 30 years
 
 ## Methodology
 
-As part of a [previous personal project](http://github.com/nico-gj/senate_vote_scraping), I scraped all Senate Roll Call votes, publicly available on the [US Senate Website](https://www.senate.gov/legislative/votes.htm). I leverage this data here, comparing Senate voting behavior during Trump's first year in office (2017) with the first year in office the three previous presidents.
+As part of a <a href="http://github.com/nico-gj/senate_vote_scraping" target="_blank">previous personal project</a>, I scraped all Senate Roll Call votes, publicly available on the <a href="https://www.senate.gov/legislative/votes.htm" target="_blank">US Senate Website</a>. I leverage this data here, comparing Senate voting behavior during Trump's first year in office (2017) with the first year in office the three previous presidents.
 
 <!-- An exhaustive list of US Senate Roll Call votes can be found on the [United States Senate webpage](http://www.senate.gov). Using the Python `requests` package, and the text parser `BeautifulSoup`, I pulled every vote cast by every Senator from Donald Trump's first year in office (2017). For comparison, I also pulled the data for first year in office of the three previous presidents. -->
 
@@ -43,7 +43,7 @@ In the resulting analytical frame, a given senator is assigned a vector with as 
 
 Principal Component Analysis is used to reduce the number of dimensions in multi-variate problems. Here, I use it to project the coordinates of each senator in the multi-hundred dimensions onto a two-dimensional plan. I use the `PCA` function from the Python `sklearn` package, and plot the results on Tableau.
 
-All of the code I developed for this project can be found on the [project's GitHub repo](http://github.com/nico-gj/2017_senate_voting).
+All of the code I developed for this project can be found on the <a href="http://github.com/nico-gj/2017_senate_voting" target="_blank">project's GitHub repo</a>.
 
 
 ## Results
