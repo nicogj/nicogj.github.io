@@ -5,7 +5,7 @@ theme:        "Politics"
 title:        "Text Analysis on 2017 UN General Assembly Speeches"
 subtitle:     "What issues do world leaders address?"
 author:       "Nicolas Guetta Jeanrenaud"
-repo: 		    "https://github.com/nico-gj/2017_un_speeches"
+repo: 		    "https://github.com/nicogj/2017_un_speeches"
 date:         2018-09-12 12:00:00
 header-img:   ""
 ---
@@ -126,4 +126,4 @@ When if comes to climate change, however, the map appears completely bare. Most 
 </body>
 <br>
 
-In any case, these data offer fascinating insight into what world leaders focus on, or at least what they project as their focus. Feel free to get in touch if you notice other interesting results! All the data and code is available on Github, <a href="https://github.com/nico-gj/2017_un_speeches" target="_blank">here</a>.
+In any case, these data offer fascinating insight into what world leaders focus on, or at least what they project as their focus. Feel free to get in touch if you notice other interesting results! All the data and code is available on Github, <a href="https://github.com/nicogj/2017_un_speeches" target="_blank">here</a>.

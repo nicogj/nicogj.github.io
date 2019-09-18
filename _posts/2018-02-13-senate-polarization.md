@@ -5,7 +5,7 @@ theme:        "Politics"
 title:        "Visualizing US Senate Polarization in 2017"
 subtitle:     "How party line voting has evolved"
 author:       "Nicolas Guetta Jeanrenaud"
-repo: 		    "https://github.com/nico-gj/2017_senate_polarization"
+repo: 		    "https://github.com/nicogj/2017_senate_polarization"
 date:         2018-02-13 12:00:00
 header-img:   ""
 ---
@@ -17,12 +17,11 @@ In this project, I take a look at voting in the US Senate over the past 30 years
 <body>
 <div class='tableauPlaceholder' id='viz1550517331983' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;Senator_Votes_PCA_2017_detail&#47;2017SenatorVotePCA&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Senator_Votes_PCA_2017_detail&#47;2017SenatorVotePCA' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;Senator_Votes_PCA_2017_detail&#47;2017SenatorVotePCA&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1550517331983');                    var vizElement = divElement.getElementsByTagName('object')[0];                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
 </body>
-
 <br>
 
 ## Methodology
 
-As part of a <a href="http://github.com/nico-gj/senate_vote_scraping" target="_blank">previous personal project</a>, I scraped all Senate Roll Call votes, publicly available on the <a href="https://www.senate.gov/legislative/votes.htm" target="_blank">US Senate Website</a>. I leverage this data here, comparing Senate voting behavior during Trump's first year in office (2017) with the first year in office the three previous presidents.
+As part of a <a href="http://github.com/nicogj/senate_vote_scraping" target="_blank">previous personal project</a>, I scraped all Senate Roll Call votes, publicly available on the <a href="https://www.senate.gov/legislative/votes.htm" target="_blank">US Senate Website</a>. I leverage this data here, comparing Senate voting behavior during Trump's first year in office (2017) with the first year in office the three previous presidents.
 
 <!-- An exhaustive list of US Senate Roll Call votes can be found on the [United States Senate webpage](http://www.senate.gov). Using the Python `requests` package, and the text parser `BeautifulSoup`, I pulled every vote cast by every Senator from Donald Trump's first year in office (2017). For comparison, I also pulled the data for first year in office of the three previous presidents. -->
 
@@ -33,17 +32,18 @@ Senate Session | Year | Serving President | Senate Composition
 113 | 2009 | Barack Obama (first year) | 56 Dem -- 2 Ind -- 42 Rep
 117 | 2017 | Donald Trump (first year) | 47 Dem -- 2 Ind -- 51 Rep
 
-Vote positions are codified:
+Vote positions are encoded as follows:
 - `Yea` is converted to `1`
 - `Not Voting` or missing data is converted to `0`
 - `Nay` is converted to `-1`
-I also drop all Senators with more than 80% of missing data---these are usually short-term Senators who served only interim roles during a short-term vacancy.
 
-In the resulting analytical frame, a given senator is assigned a vector with as many values as there were votes in that Senate session, and each value one of the values {-1, 1, 0}. Essentially, if there are 300 roll call votes, each senator is considered in a 300-dimension space, and given a coordinate of -1, 1, or 0 in every one of these dimensions.
+I also drop all Senators with more than 80% of missing data---these are usually short-term Senators who served only interim roles during a vacancy.
 
-Principal Component Analysis is used to reduce the number of dimensions in multi-variate problems. Here, I use it to project the coordinates of each senator in the multi-hundred dimensions onto a two-dimensional plan. I use the `PCA` function from the Python `sklearn` package, and plot the results on Tableau.
+In the resulting analytical frame, a given senator is assigned a vector with as many values as there were votes in that Senate session, and each value one of the values `{-1, 1, 0}`. Essentially, if there are 300 roll call votes, each senator is considered in a 300-dimension space, and given a coordinate of `-1`, `1`, or `0` in every one of these dimensions.
 
-All of the code I developed for this project can be found on the <a href="http://github.com/nico-gj/2017_senate_voting" target="_blank">project's GitHub repo</a>.
+Principal Component Analysis is commonly used to reduce the number of dimensions in multi-variate problems. Here, I use it to project the coordinates of each senator in the multi-hundred dimensions onto a two-dimensional plot. I use the `PCA` function from the Python `sklearn` package, and visualize the results on Tableau.
+
+All of the code I developed for this project can be found on the <a href="http://github.com/nicogj/2017_senate_voting" target="_blank">project's GitHub repo</a>.
 
 
 ## Results
@@ -87,7 +87,7 @@ A combination of unstable majorities and opposing parties in power for the large
 
 Democratic centrist on the other hand usually come from traditionally Republican-leaning states, like the Deep South. The bulk of the Democratic party is concentrated around prominent senators such as Tom Daschle, Harry Reid, John Kerry, or Hillary Clinton. A major outlier is Senator Feingold, from Wisconsin. Considered one of the most liberal senators of the nation, Feingold often broke with his own party, opposing NAFTA under Bill Clinton, for example. In 2001, in the aftermath of 9/11, he was the only senator to oppose the Patriot Act.
 
-### 2009: The parties come together
+### 2009: The parties regroup
 
 Obama's election in 2008 gave Democrats a clear majority in the Senate, and the voting topology of senators that year resembles the classic distribution of 1993. The party in power having the power to call votes, only does so when a majority is quasi-guaranteed. In effect, that party appears as exceptionally clustered while the opposition senators are spread out according to their penchant for bipartisanship.
 

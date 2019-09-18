@@ -19,8 +19,8 @@ description: Nicolas Guetta Jeanrenaud's personal website.
 # It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: nico_gj_
-github_username:  nico-gj
+twitter_username: nicogj_
+github_username:  nicogj
 linkedin_username: nicolas-guetta-jeanrenaud-4348b486
 email_username: nicolas.jeanrenaud@gmail.com
 google_analytics: UA-131722816-1
