@@ -5,6 +5,10 @@
 _archives/
 _site
 
+# Images:
+img/index_*.jpg
+img/nico_*.jpg
+
 # Other
 .sass-cache
 .jekyll-metadata
