@@ -14,4 +14,4 @@ Previously, I have worked in digital affairs at the <a href="https://idss.mit.ed
 
 My academic background is in Engineering (M.S. from <a href="http://www.mines-paristech.eu/" target="_blank">L'Ecole des Mines de Paris---MINES ParisTech</a>) and Pure Mathematics and Physics ("classe préparatoire" MPSI-MP at the <a href="https://lyc-henri4.scola.ac-paris.fr/" target="_blank">Lycée Henri IV</a> in Paris).
 
-My full CV is available <a href="{{ site.url }}/docs/cv_nicolas_guetta_jeanrenaud.pdf" target="_blank">here</a>.
+My full CV is available <a href="{{ site.url }}/docs/nicolas_guetta_jeanrenaud.pdf" target="_blank">here</a>.
