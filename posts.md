@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Posts
+title: Blog Posts
 permalink: /posts/
 ---
 
+
 {%- if site.posts.size > 0 -%}
-  <!-- <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2> -->
   <ul class="post-list">
     {%- for post in site.posts -%}
       {%- if post.category=="post" -%}
@@ -13,18 +13,16 @@ permalink: /posts/
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
           <span class="post-meta">{{ post.date | date: date_format }}</span>
           <h3>
-            <a class="post-link" href="{{ post.url | relative_url }}">
-              {{ post.title | escape }}
-            </a>
+            <b><a class="post-link" href="{{ post.url | relative_url }}">
+                {{ post.title | escape }}
+            </a></b>
+            <i><font size="4">
+              {{ post.subtitle }}
+            </font></i>
           </h3>
-          {%- if site.show_excerpts -%}
-            {{ post.excerpt }}
-          {%- endif -%}
         </li>
       {%- endif -%}
     {%- endfor -%}
   </ul>
-
-  <!-- <p class="feed-subscribe"><svg class="svg-icon orange"><use xlink:href="{{ '/assets/minima-social-icons.svg#rss' | relative_url }}"></use></svg><a href="{{ "/feed.xml" | relative_url }}">Subscribe</a></p> -->
 
 {%- endif -%}
