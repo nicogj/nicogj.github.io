@@ -2,8 +2,8 @@
 layout:       post
 category:     post
 theme:        "Public Policy"
-title:        "Text Analysis on 2017 UN General Assembly Speeches"
-subtitle:     "What issues do world leaders address?"
+title:        "What Issues do our World Leaders Address?"
+subtitle:     "Topic modeling on 2017 UN General Assembly speeches"
 author:       "Nicolas Guetta Jeanrenaud"
 repo: 		    "https://github.com/nicogj/2017_un_speeches"
 date:         2018-09-12 12:00:00

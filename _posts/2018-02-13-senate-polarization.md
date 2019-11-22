@@ -2,8 +2,8 @@
 layout:       post
 category:     post
 theme:        "Politics"
-title:        "Visualizing US Senate Polarization in 2017"
-subtitle:     "How party line voting has evolved"
+title:        "US Senate Polarization in 2017"
+subtitle:     "Principal Component Analysis of voting clusters over the past 25 years"
 author:       "Nicolas Guetta Jeanrenaud"
 repo: 		    "https://github.com/nicogj/2017_senate_polarization"
 date:         2018-02-13 12:00:00
