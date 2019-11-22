@@ -1,7 +1,7 @@
 ---
 layout:       post
 category:     post
-theme:        "Politics"
+theme:        "Public Policy"
 title:        "Text Analysis on 2017 UN General Assembly Speeches"
 subtitle:     "What issues do world leaders address?"
 author:       "Nicolas Guetta Jeanrenaud"
