@@ -4,7 +4,7 @@ category:     post
 theme:        "Politics"
 title:        "2016 Presidential Polls Post-Mortem"
 subtitle:     "Where Trump beat the odds to become president"
-author:       "Nicolas Guetta Jeanrenaud and Ugo Tanielian"
+author:       "Nicolas Guetta-Jeanrenaud and Ugo Tanielian"
 date:         2016-12-20 12:00:00
 repo: 		    "https://github.com/nicogj/2016_trump_polling_error"
 header-img:   "/img/20161220_trump_polling_error/map.jpg"
