@@ -6,7 +6,7 @@ title:        "The Rise of the \"China Virus\" Conspiracy on Twitter"
 subtitle:     "BERT Embeddings classify reactions to Trump's inflammatory language"
 author:       "Nicolas Guetta-Jeanrenaud, Boyu Liu, and Nic Rothbacher"
 repo: 		    "https://github.com/lbyiuou0329/MIT-NLP-project"
-date:         2020-10-25 12:00:00
+date:         2020-10-31 12:00:00
 header-img:   "/img/2020_chinese_virus/time_series.png"
 ---
 
