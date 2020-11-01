@@ -7,7 +7,7 @@ subtitle:     "Principal Component Analysis of voting clusters over the past 25 
 author:       "Nicolas Guetta-Jeanrenaud"
 repo: 		    "https://github.com/nicogj/2017_senate_polarization"
 date:         2018-02-13 12:00:00
-header-img:   ""
+image:   ""
 ---
 
 As Donald Trump's first year in office comes to a close, talk of political polarization in Washington has increased. A number of research has found record levels of partisanship in Congress this past year (<a href="https://voteview.com/" target="_blank">VoteView</a> has tracked partisanship in Congress since 1992 using the DW-NOMINATE procedure and recently called the 114th Congress <a href="https://voteviewblog.com/2016/12/18/the-end-of-the-114th-congress/" target="_blank">"the most polarized [...] since the early 20th Century"</a>).

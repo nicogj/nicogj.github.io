@@ -7,7 +7,7 @@ subtitle:     "Topic modeling on 2017 UN General Assembly speeches"
 author:       "Nicolas Guetta-Jeanrenaud"
 repo: 		    "https://github.com/nicogj/2017_un_speeches"
 date:         2018-09-12 12:00:00
-header-img:   ""
+image:   ""
 ---
 
 Every year, around September, world leaders meet in New York for the UN General Assembly Grand Debate. The event features a speech from every country's delegation, usually delivered by the head of state or a top diplomat, and gives each member the opportunity to highlight the most pressing world issues in their view. From an analytical standpoint, the General Assembly is a unique opportunity to observe the issues world leaders choose to address.

@@ -7,7 +7,7 @@ subtitle:     "BERT embeddings classify reactions to Trump's inflammatory langua
 author:       "Nicolas Guetta-Jeanrenaud, Boyu Liu, and Nic Rothbacher"
 repo: 		    "https://github.com/lbyiuou0329/MIT-NLP-project"
 date:         2020-10-31 12:00:00
-header-img:   "/img/2020_chinese_virus/time_series.png"
+image:        "/img/2020_chinese_virus/time_series.png"
 ---
 
 <center>

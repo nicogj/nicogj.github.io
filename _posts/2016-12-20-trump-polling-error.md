@@ -7,7 +7,7 @@ subtitle:     "Where Trump beat the odds to become president"
 author:       "Nicolas Guetta-Jeanrenaud and Ugo Tanielian"
 date:         2016-12-20 12:00:00
 repo: 		    "https://github.com/nicogj/2016_trump_polling_error"
-header-img:   "/img/20161220_trump_polling_error/map.jpg"
+image:   "/img/20161220_trump_polling_error/map.jpg"
 ---
 
 Trailing in the polls, disregarded by the vast majority of data and opinion experts, Donald Trump defied all odds last November and snatched the highest office in the country. Despite an amateur-looking campaign and a non-stop flow of scandals and gruesome remarks, his victory is---in terms of electoral college---wide and indisputable. While it may take years to understand how this political earthquake happened, a close observation of state-by-state results can provide preliminary insight into how Mr. Trump sealed the deal, and left pundits and pollsters scrambling with their predictions.
