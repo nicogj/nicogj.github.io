@@ -28,22 +28,22 @@ Donald Trump first used "Chinese Virus" on Twitter on March 16th, claiming that 
 </center>
 <br>
 
-For the purpose of this project, we collect all the tweets related to the term "Chinese Virus" from January 1st, 2020 to April 30th, 2020. Overall, 14,984 tweets are included in our analysis. Initial time-series plots show that while the term was already in use within small circles before Donald Trump’s tweet, its use went through the roof in the days following the president’s post.
-Since we restrict our analysis to Tweets with a geotagged location, we are able to precisely pinpoint where users were located when they reacted to the president’s tweet. The county-level map below shows that reaction and subsequent use of the term "Chinese Virus" took place across the entire country.
+For the purpose of this project, we collect all the tweets related to the term "Chinese Virus" from January 1st, 2020 to April 30th, 2020. Overall, 14,984 posts are included in our analysis. Initial time-series plots show that while the term was already in use within small circles before Donald Trump’s tweet, its use went through the roof in the days following the president’s endorsement.
+Since we restrict our analysis to geotagged content, we are able to pinpoint where users were located when they reacted to the president’s tweet. The county-level map below shows that reaction and subsequent use of the term "Chinese Virus" took place across the entire country.
 
 <center>
 {% include projects/2020-chinese-virus/map_tweets.html %}
 </center>
 <br>
 
-As could be expected, much of the social media activity was concentrated in dense urban areas such as Miami, Los Angeles, Houston, and New York. In fact, at state level, prevalence of the topic is mostly proportional to population. Largely, the term "Chinese Virus" was on the mind of social media users everywhere, and the use of the term on social media is surprisingly independent of the political leanings of the states the users posted from. One notable exception is the District of Columbia---where the topic was remarkably salient within a small population likely due to the concentration of news media and political users.
+As could be expected, much of the social media activity was concentrated in dense urban areas such as Miami, Los Angeles, Houston, and New York. In fact, at state level, prevalence of the topic is mostly proportional to population. Largely, the term “Chinese Virus” was on the mind of social media users everywhere, and number of related posts is surprisingly independent of state-level political leanings and socioeconomic characteristics. One notable exception is the District of Columbia---where the topic was remarkably salient within a small population, likely due to the concentration of news outlets and political users.
 
 <center>
 {% include projects/2020-chinese-virus/pop_tweets.html %}
 </center>
 <br>
 
-Opinions expressed, however, were radically polarized. Some users rushed to denounce the term "Chinese Virus" as racist. For others, its unapologetic use by national elites normalized the term, which became an acceptable synonym to "COVID-19". Finally, in specific far-right circles, this tweet fuels dozens of conspiracies on the inception and spread of the virus.
+Opinions expressed, however, were radically polarized. Some users rushed to denounce the term "Chinese Virus" as racist. For others, its unapologetic use by national elites normalized the term, which became an acceptable synonym to "COVID-19". Finally, in specific far-right circles, this tweet fueled dozens of conspiracies on the inception and spread of the virus.
 
 ### NLP analysis highlights polarized reactions
 
