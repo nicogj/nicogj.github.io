@@ -47,9 +47,9 @@ Opinions expressed, however, were radically polarized. Some users rushed to deno
 
 ### NLP analysis highlights polarized reactions
 
-Understanding the nature of the reaction therefore requires classifying the tweets based on the point of view they express. Advanced methods of Natural Language Processing can create representations of social media posts which account for their semantic meaning—including the topic, opinion, and sentiment expressed by the user. Here, we use [a state-of-the-art transformer language model called BERT](https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270) to create embeddings— easy-to-compare representations of the meanings and sentiments — of every tweet. While traditional language models rely on word occurrence, these representations account for syntax and structure, and unsupervised classification on these embeddings can create relevant opinion clusters.
+Understanding the nature of the reaction therefore requires classifying the tweets based on the point of view they express. Advanced methods of NLP can create representations of social media posts which account for their lexical field, syntax, and structure. Here, we use [a state-of-the-art transformer language model called BERT](https://towardsdatascience.com/bert-explained-state-of-the-art-language-model-for-nlp-f8b21a9b6270) to create easy-to-compare representations. Similar representations---characterizing tweets with similar expressed topics, opinions, and sentiment---are classified into clusters of semantic meaning.
 
-Since our classification method is unsupervised, we approximate the meaning of every cluster by printing the 5 tweets most central to that cluster. When clusters are relevantly defined, these tweets will have similar semantic meaning. This subset of tweets informs on the opinions and sentiment of the other tweets in that cluster.
+Since our classification method is unsupervised, we don't know _a priori_ what point of view will be expressed in each cluster. We approximate the meaning of every cluster by printing the 5 tweets most central to that cluster. When the clusters are relevantly defined, these tweets have similar semantic meaning and are representative of the overall opinions and sentiment expressed in the cluster.
 
 An initial, 3-cluster classification of the already produces relevant splits in the data. Cluster 2 is made up of mostly short, uninformative tweets using "Chinese Virus". However, clusters 1 and 3 distinguish content denouncing the use of the term (Cluster 3) from content supporting its use (Cluster 1).
 
@@ -76,7 +76,7 @@ An initial, 3-cluster classification of the already produces relevant splits in 
 -  How ignorant must one be, when the only question you have for the #POTUS is a comment asking is he a racist toward China because he referred to this as a Chinese Virus!  What a world we live in now..EVERYONE IS SO HELL BENT ON FINDING SOMETHING TO BE OFFENDED OF..#Misery
 </pre>
 
-As we increase the number of clusters, additional nuances start to appear. For 7 classes, the uninformative cluster remains, but the positive and negative clusters have been split into more granular categories. We can manually assign the 7 clusters to 5 categories as described below.
+As we increase the number of clusters, additional nuances start to appear. For 7 classes, the uninformative cluster remains, but the positive and negative clusters have been split into more granular categories. We can manually assign the 7 clusters to 5 categories described below.
 
 <center>
 <img class="example-image" src="/img/2020_chinese_virus/kmeans.png" alt="image-1" />
