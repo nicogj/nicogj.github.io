@@ -155,7 +155,7 @@ This aggregate analysis glosses over important temporal dynamics. The initial su
 </center>
 <br>
 
-The overall number of topical tweets quickly decreased and within 2 weeks of Trump’s first use of the term, making it hard to distinguish which clusters dominate the Twittersphere subsequently. However, examining the share of clusters instead of overall numbers sheds lights on important dynamics taking place. While denunciation of the term as racist, and anger at its use, gradually tapers off, positive use of the term persists in certain circles. By the end of April, 60% of tweets on the topic of "Chinese Virus" use the term in an affirmative way.
+The overall number of topical tweets quickly decreased and within 2 weeks of Trump’s first use of the term, making it hard to distinguish which clusters dominate the Twittersphere subsequently. However, examining the share of clusters instead of overall numbers sheds lights on longer-term effects. While denunciation of the term as racist, and anger at its use, gradually tapers off, positive use of the term persists in certain circles. By the end of April, 60% of tweets on the topic of "Chinese Virus" use the term in an affirmative way.
 
 <center>
 <img class="example-image" src="/img/2020_chinese_virus/topic_time_series_share.png" alt="pca" />
@@ -164,9 +164,7 @@ The overall number of topical tweets quickly decreased and within 2 weeks of Tru
 
 ### Reactions are largely location-specific
 
-Cluster prevalence is also highly location-specific and at the state level, the share of posts pertaining to each cluster varies importantly. Among the states with the largest populations, New York and California exhibit higher levels of content critical of Donald Trump’s rhetoric, whereas users in Florida and Texas are more likely to support the use of the term.
-
-<!-- We create state-level scores by scaling every state's -->
+Cluster prevalence is also highly location-specific and, at the state level, the share of posts pertaining to each cluster varies importantly. We create state-level cluster scores by calculating the share of tweets in every cluster, and scaling across states. Among the states with the largest populations, New York and California exhibit higher levels of content critical of Donald Trump’s rhetoric, whereas users in Florida and Texas are more likely to support the use of the term.
 
 <center>
 <img class="example-image" src="/img/2020_chinese_virus/spider_plot_big.png" alt="pca" />
