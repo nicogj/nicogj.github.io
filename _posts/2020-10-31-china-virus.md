@@ -23,25 +23,10 @@ In this post, we use Natural Language Processing (NLP) to analyze the discourse 
 
 Donald Trump first used "Chinese Virus" on Twitter on March 16th, claiming that COVID-19 ["comes from China"](https://www.nytimes.com/2020/03/18/us/politics/china-virus.html) when pressed on the issue. A widespread debate ensued, with many health experts cautioning against the use of the term because of the stigma it might cause and Democratic politicians decrying it as racist. In the subsequent months, however, expressions such as "Chinese Virus", ["Wuhan Virus"](https://www.politico.com/news/2020/03/25/mike-pompeo-g7-coronavirus-149425), and even ["Kung Flu"](https://twitter.com/bennyjohnson/status/1274503526815870976?s=20) have become commonplace in Trump Administration communications, among right-wing commentators, and on social media. Anti-Asian harassment and violence linked to the COVID-19 pandemic has become a global issue, with most attacks placing blame on Asians for causing the virus or spreading it to others. In the US, the Stop AAPI Hate organization recorded [over 2,500 incidents of anti-Asian violence from March 19th through August 5th](http://www.asianpacificpolicyandplanningcouncil.org/wp-content/uploads/STOP_AAPI_Hate_National_Report_3.19-8.5.2020.pdf). Inflammatory language that blames Chinese people for the pandemic undoubtedly fueled this violence.
 
-<!-- <center>
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Cuomo wants "all states to be treated the same." But all states aren’t the same. Some are being hit hard by the Chinese Virus, some are being hit practically not at all. New York is a very big "hotspot", West Virginia has, thus far, zero cases. Andrew, keep politics out of it....</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/1239889767267008512?ref_src=twsrc%5Etfw">March 17, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</center>
-<br> -->
-
 For the purpose of this project, we collect all the tweets related to the term "Chinese Virus" from January 1st, 2020 to April 30th, 2020. Overall, 14,984 tweets are included in our analysis. Initial time-series plots show that while the term was already in use within small circles before Donald Trump’s tweet, its use went through the roof in the days following the president’s post.
 Since we restrict our analysis to Tweets with a geotagged location, we are able to precisely pinpoint where users were located when they reacted to the president’s tweet. The county-level map below shows that reaction and subsequent use of the term "Chinese Virus" took place across the entire country.
 
-<!-- <center>
-{% include projects/2020-chinese-virus/map_tweets.html %}
-</center>
-<br> -->
-
 As could be expected, much of the social media activity was concentrated in dense urban areas such as Miami, Los Angeles, Houston, and New York. In fact, at state level, prevalence of the topic is mostly proportional to population. Largely, the term "Chinese Virus" was on the mind of social media users everywhere, and the use of the term on social media is surprisingly independent of the political leanings of the states the users posted from. One notable exception is the District of Columbia---where the topic was remarkably salient within a small population likely due to the concentration of news media and political users.
-
-<!-- <center>
-{% include projects/2020-chinese-virus/pop_tweets.html %}
-</center>
-<br> -->
 
 Opinions expressed, however, were radically polarized. Some users rushed to denounce the term "Chinese Virus" as racist. For others, its unapologetic use by national elites normalized the term, which became an acceptable synonym to "COVID-19". Finally, in specific far-right circles, this tweet fuels dozens of conspiracies on the inception and spread of the virus.
 
@@ -51,27 +36,7 @@ Understanding the nature of the reaction therefore requires classifying the twee
 
 Since our classification method is unsupervised, we approximate the meaning of every cluster by printing the 5 tweets most central to that cluster. When clusters are relevantly defined, these tweets will have similar semantic meaning. This subset of tweets informs on the opinions and sentiment of the other tweets in that cluster.
 
-<!-- An initial 2-cluster classification produces hardly relevant results. A first cluster references short, non-informative tweets. The second cluster presents more interesting tweets, but combines positive and negative reactions to Trump's use of the term. A finer analysis is therefore necessary. -->
-
-<!-- <pre>
-<b>Cluster 1 (5289 tweets) is approximated by:</b>
--  Bruh called it the "Chinese Virus"
--  Note: the Chinese Virus.
--  "The Chinese Virus"
--  😩😩😩😩@ "the Chinese Virus"
--  It’s a Chinese Virus, right?
-
-<b>Cluster 2 (9695 tweets) is approximated by:</b>
--  @realDonaldTrump is an ass. When China excludes the US from  pharmaceuticals he'll whine about it being Obama's fault!  Joe Scarborough Warns to Not Take the Bait: Trump Using 'Chinese Virus' as Distraction from Lack of Tests and Ventilators via @mediaite
--  The thing is, if this was just about being spiteful to China, Trump could’ve called it the "China Virus" (which would still be awful), but Trump’s racist & knows how to get his racist cult all riled up & distracted from the fact that Trump is failing in this crisis #RacistInChief
--  @realDonaldTrump calls the #COVID19 virus the #ChinaVirus because he needs someone/something to blame. It's racist, but not intentionally. Trump is protecting himself, the only thing he ever does. And as usual, he doesn't care who he hurts. It is the nature of his narcissism.
--  @jaketapper calls #TrumpSupporters racist🇺🇸 Now he calls us stupid and racist because we say #ChinaVirus and wants us self-quarantined out of society.. His ignorance and #Hypocrisy is frightening!…
--  The worst thing about these experts & politicians standing behind Trump at these #PressConferences is their silence every time Trump calls the #coronavirus the #ChineseVirus. No one wants to take any real responsibility in this #CoronaCrisis.   They are all complicit! #CorruptGOP
-</pre> -->
-
 An initial, 3-cluster classification of the already produces relevant splits in the data. Cluster 2 is made up of mostly short, uninformative tweets using "Chinese Virus". However, clusters 1 and 3 distinguish content denouncing the use of the term (Cluster 3) from content supporting its use (Cluster 1).
-
-<!-- When we classify the tweets according to 3 clusters, the cluster of informative tweets remains, mostly unchanged (below, Cluster 2). However, longer, informative tweets have been separated between tweets that are mostly supportive of Trump's use of the term "Chinese Virus" (Cluster 1), and tweets that are critical (Cluster 3). This rudimentary 3-cluster classification already seems to produce relevant clusters for analysis. -->
 
 <pre>
 <b>Cluster 1 (6236 tweets) is approximated by:</b>
@@ -194,8 +159,6 @@ Cluster prevalence is also highly location-specific and at the state level, the 
 
 Similar analysis can be conducted in historically polarized states. In traditionally Republican states—such as Alabama, Kentucky, and Oklahoma—Trump’s rhetoric resonates with voters: the term, quasi-inexistent in social media before its use by the President of the United States, is normalized or even encouraged by users. In traditionally Democratic states, on the other hand, the reaction is strong opposition to the use of the term. The District of Columbia, Massachusetts, and Washington have among the highest scores in the country on the ‘Critical use of "Chinese Virus"’ cluster.
 
-<!-- **WE GET THESE STATES FROM 538** -->
-
 <center>
 <img class="example-image" src="/img/2020_chinese_virus/spider_plot_polarized.png" alt="pca" />
 </center>
@@ -209,11 +172,6 @@ North Carolina, for instance, offers a muted response: the state scores high on 
 </center>
 
 We construct an 'Affrimation score to the use of "Chinese Virus"' by scaling the normalized difference between the levels of the cluster 'Affirmative use of "Chinese Virus"' and 'Critical use of "Chinese Virus"'. States with scores closest to 1 are the states where affirmative use of "Chinese Virus" was the highest relative to critical use. Only states with over 100 Tweets are included in the visualization. While we don't expect this map to look exactly like Tuesday's electoral map, it does show that Trump's path to victory is a complicated one given the opposition to his rhetoric we observe in several key areas (Pennsylvania, Michigan, Wisconsin, Arizona).
-
-<!-- <center>
-{% include projects/2020-chinese-virus/map_scores.html %}
-</center>
-<br> -->
 
 Pundits have long argued that Trump’s electoral strength lay in his unhinged and provocative speaking style. However, for many voters COVID-19 might have highlighted his limitations as a leader in a time of crisis—both in his management and communication. While the "Chinese Virus" term has clearly stuck within far-right groups, it does not seem to resonate with social media users in crucial swing states. If Trump does end up losing on Tuesday, his divisive and inflammatory rhetoric may very well have contributed to his unmaking.
 
