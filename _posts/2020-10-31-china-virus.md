@@ -2,7 +2,7 @@
 layout:       post
 category:     post
 theme:        "Technology"
-title:        "The Spread of \"China Virus\" on Twitter"
+title:        'The Spread of "China Virus" on Twitter'
 subtitle:     "BERT embeddings classify reactions to Trump's inflammatory language"
 author:       "Nicolas Guetta-Jeanrenaud, Boyu Liu, and Nic Rothbacher"
 repo: 		    "https://github.com/lbyiuou0329/MIT-NLP-project"
