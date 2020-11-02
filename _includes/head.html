@@ -16,16 +16,18 @@
 <meta name="twitter:title"   content="{{ page.title }}">
 
 {% if page.subtitle %}
-<meta name="twitter:description" content="{{ page.subtitle }}">
+<meta name="twitter:description" content="{{ site.url }}{{ page.image }}">
+<!-- {{ page.subtitle }} -->
 {% else %}
 <meta name="twitter:description" content="{{ site.description }}">
 {% endif %}
 
 {% if page.image %}
 <meta name="twitter:card"  content="summary_large_image">
-<meta name="twitter:image" content="https://nicogj.github.io/img/2019_fake_news/crooked_hillary_scatter.png">
+<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
 {% else %}
 <meta name="twitter:card"  content="summary">
 <meta name="twitter:image" content="{{ site.url }}{{ site.title_image }}">
 {% endif %}
 <!-- end of Twitter cards -->
+<!-- https://nicogj.github.io/img/2019_fake_news/crooked_hillary_scatter.png -->
