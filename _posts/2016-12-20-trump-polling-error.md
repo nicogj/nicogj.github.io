@@ -2,7 +2,7 @@
 layout:       post
 category:     post
 theme:        "Politics"
-title:        2016 Presidential Polls "Post-Mortem"
+title:        2016 Presidential Polls \"Post-Mortem\"
 subtitle:     "Where Trump beat the odds to become president"
 author:       "Nicolas Guetta-Jeanrenaud and Ugo Tanielian"
 date:         2016-12-20 12:00:00
