@@ -185,7 +185,7 @@ North Carolina, for instance, offers a muted response: the state scores high on 
 <img class="example-image" src="/img/2020_chinese_virus/spider_plot_swing.png" alt="pca" />
 </center>
 
-We construct an 'Affrimation score to the use of "Chinese Virus"' by scaling the normalized difference between the levels of the cluster 'Affirmative use of "Chinese Virus"' and 'Critical use of "Chinese Virus"'. States with scores closest to 1 are the states where affirmative use of "Chinese Virus" was the highest relative to critical use. Only states with over 100 Tweets are included in the visualization. While we don't expect this map to look exactly like Tuesday's electoral map, it does show that Trump's path to victory is a complicated one given the opposition to his rhetoric we observe in several key areas (Pennsylvania, Michigan, Wisconsin, Arizona).
+We construct an 'Affirmation Score' by scaling the normalized difference between the levels of the 'Affirmative use of "Chinese Virus"' and 'Critical use of "Chinese Virus"' clusters. States with scores closest to 1 are the states where affirmative use of "Chinese Virus" was the highest relative to critical use. Only states with over 100 Tweets are included in the visualization. While we don't expect this map to look exactly like Tuesday's electoral map, it does show that Trump's path to victory is a complicated one given the opposition to his rhetoric we observe in several key areas (Pennsylvania, Michigan, Wisconsin, Arizona).
 
 <center>
 {% include projects/2020-chinese-virus/map_scores.html %}
