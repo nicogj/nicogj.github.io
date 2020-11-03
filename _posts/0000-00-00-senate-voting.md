@@ -17,7 +17,15 @@ permalink:    analyses/us-senate
   </div>
 </div>
 
+This project visualizes voting topology in the current US Senate. Individuals who appear closest together on the graph consistently side together on Roll Call votes. The further individuals are to one another on the graph, the more they differ in their voting profiles. The position of each senator is therefore informative only relative to where the other individuals are placed. The visualization can be used to identify ideological clusters and to evaluate party polarization.
+
 <!-- ## Methodology
+
+By running a Principal Component Analysis on every senator's roll call votes, I create a voting profile and visualize ideological clusters and party polarization.
+
+While a number of factors influence a given Senate session's voting profile, overall trends seem to indicate that Senator's increasingly vote according to party lines.
+
+
 
 In this project, I take a look at voting in the US Senate over the past 30 years. By running a Principal Component Analysis on every senator's roll call votes, I create a voting profile and visualize ideological clusters and party polarization. While a number of factors influence a given Senate session's voting profile, overall trends seem to indicate that Senator's increasingly vote according to party lines.
 
